@@ -1,4 +1,5 @@
 import React from 'react'
+import Graph from './Graph'
 
 export default function MoreStatistics() {
     const classes=[
@@ -19,7 +20,7 @@ export default function MoreStatistics() {
                     Today's Schedule
                   </h2>
                 </div>
-                <div className="flex flex-col w-[100%] xl:p-4 md:pt-2 justify-between">
+                <div className="relative flex flex-col w-[100%] xl:p-4 md:pt-2 justify-between">
                  {classes.map((data)=>(
                          <div key={data.id} className='flex flex-raw justify-between shadow-md p-1 m-1 text-center rounded-md'>
                              <div className='flex  justify-between  p-1 '>
@@ -31,6 +32,7 @@ export default function MoreStatistics() {
                              <button type="button" class=" hover:text-white border-2 border-blue-700 hover:bg-blue-800  font-semibold rounded-lg text-md px-8 py-2 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Join Class</button>
                          </div>
                      ))}
+                     <button type="button" class="relative md:left-[66%] xl:left-[68%] w-[30%] mt-2 hover:text-white border-2 border-blue-700 hover:bg-blue-800  font-semibold rounded-lg text-md px-8 py-2 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">View All</button>
                 </div>
               </div>
             </div>
@@ -42,7 +44,7 @@ export default function MoreStatistics() {
                   </h2>
                 </div>
                 <div className="flex w-[100%] xl:p-4 md:pt-2 justify-between">
-                 asdfghjn
+              <Graph />
                 </div>
               </div>
             </div>
