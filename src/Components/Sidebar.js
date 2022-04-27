@@ -4,7 +4,7 @@ import { ChartSquareBarIcon,BookOpenIcon, ClipboardIcon } from "@heroicons/react
 export default function Sidebar({displaySide}) {
   console.log(displaySide);
   return (
-    <div className={` absolute left-[-200px] ${displaySide && "left-0 "} w-60 h-[calc(100vh-80px)] shadow-md bg-white px-1 absolute  trasition ease-in-out duration-100  `}>
+    <div className={` absolute left-[-250px] ${displaySide && "left-0 "} w-60 h-[calc(100vh-80px)] shadow-md bg-white px-1 absolute  trasition ease-in-out duration-100  `}>
       <div>
         <ul className="relative font-bold">
           <li className="relative p-2 mt-2 rounded-xl hover:bg-blue-500 hover:text-white transition duration-100 ease-in">
