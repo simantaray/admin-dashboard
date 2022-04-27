@@ -4,7 +4,7 @@ import Statics from '../Components/Statics'
 
 export default function Body() {
   return (
-    <div className='border-2 bg-gray-200 h-[calc(100vh-80px)] xl:w-[80vw] md:w-screen'>
+    <div className='relative xl:left-[235px] bg-gray-200 h-[calc(100vh-80px)] xl:w-[62vw]'>
         <Statics />
         <MoreStatistics />
     </div>

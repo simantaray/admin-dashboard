@@ -13,14 +13,12 @@ import {
 export default function Nav() {
 
     const [displaySide,setDisplaySide]=useState(false);
-
-
     const handleSidebar=()=>{
         setDisplaySide(!displaySide);
     }
 
   return (
-    <>
+    <div className="z-50">
       {/* topbar */}
 
       <header className="body-font flex">
@@ -59,6 +57,6 @@ export default function Nav() {
         <Sidebar displaySide={displaySide}/>
 
     
-    </>
+    </div>
   );
 }

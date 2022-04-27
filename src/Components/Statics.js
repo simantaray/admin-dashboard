@@ -12,7 +12,7 @@ export default function Statics() {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-8 mx-auto">
+        <div className="container md:px-1 xl:px-5 py-8 mx-auto">
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/2">
               <div className="flex rounded-lg h-full bg-white p-8 flex-col">
@@ -25,10 +25,10 @@ export default function Statics() {
                   {datas.map((data) => (
                     <div
                       key={data.index}
-                      className="text-center  border-2 border-blue-900 rounded-md p-4 xl:mr-10 xl:ml-10 mr-1 ml-1 w-1/3"
+                      className="text-center  border-2 border-blue-900 rounded-md p-1 xl:p-4 xl:mr-5 xl:ml-5 lg:mr-0 lg:ml-0 mr-1 ml-1 w-1/3"
                     >
-                      <p className="font-bold text-3xl">{data.days}</p>
-                      <p className="font-semibold">{data.des}</p>
+                      <p className="font-bold text-2xl xl:text-3xl">{data.days}</p>
+                      <p className="text-sm xl:text-md font-semibold">{data.des}</p>
                     </div>
                   ))}
                 </div>
@@ -67,7 +67,7 @@ export default function Statics() {
                         // trailColor: '#d6d6d6',
                         // backgroundColor: `${percentage.color}`,
                       })}
-                      className="h-[95px] text-black"
+                      className="h-[60px] xl:h-[95px] text-black"
                       key={percentage.index}
                       value={percentage.number}
                       text={`${percentage.number}%`}
